@@ -1,0 +1,20 @@
+{
+  "name": "pm-tracker-testing",
+  "version": "1.0.0",
+  "description": "PM Tracker – automated test suite",
+  "private": true,
+  "scripts": {
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "fakeTimers": {
+      "enableGlobally": false
+    }
+  }
+}
